@@ -1,7 +1,7 @@
 Table of Contents
 =================
 
-  * [github-markdown-toc](#github-markdown-toc)
+  * [Introduction](https://github.com/papa28x4/fta-python/blob/main/lessons/introduction.py)
   * [Installation](#installation)
     * [Precompiled binaries](#precompiled-binaries)
     * [Compiling from source](#compiling-from-source)
