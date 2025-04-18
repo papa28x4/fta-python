@@ -36,7 +36,7 @@ List Characteristics
 Getting the length of list
 '''
 # To get the number of items contained in a list, we can use the len() function
-print('number of countries:', len(countries))
+print('number of countries:', len(countries))  # prints 5
 
 
 '''
@@ -67,11 +67,11 @@ print(languages[-2])  # prints SQL (which is the second item counting from the r
 Change a specific List Item
 '''
 # We can change the items of a list by assigning new values using the = operator.
-# Assuming we no longer want to learn PHP. So we want to replace PHP with Python
+# Assuming we no longer want to learn PHP. We want to replace PHP with Python.
 
 languages[-1] = "Python"
 
-print("Updated Languages:", languages)
+print("Updated Languages:", languages)  # Updated Languages: ['HTML', 'CSS', 'SQL', 'Python']
 
 
 '''
@@ -98,14 +98,15 @@ print("alphabets[2:-2]=", alphabets[2:-2])  # prints ['c', 'd', 'e', 'f']
 # If you omit the end index, slicing will go all the way to include last element
 
 # get a list with items from index 3 to last
-print("alphabets[5: ] =", alphabets[3:])
+print("alphabets[5: ] =", alphabets[3:])  # ['d', 'e', 'f', 'g', 'h']
 
 # get a list from the first item to index 4
-print("alphabets[: 5] =", alphabets[:5])
+print("alphabets[: 5] =", alphabets[:5])  # ['a', 'b', 'c', 'd', 'e']
 
 # omitting both start and end index will get a list from start to end items.
-# This is one way to make a copy of a list because every item on original list is sliced.
-print("alphabets[:] =", alphabets[:])
+# This is one way to make a copy of a list because every item on original list is sliced out.
+
+print("alphabets[:] =", alphabets[:])  # ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
 
 # Note: The slice operator creates a new list. It does not mutate the original list
 
@@ -122,7 +123,7 @@ states = ["Ekiti", "Plateau", "Imo", "Borno"]
 
 states.append("Kano")
 
-print("Updated States:", states)
+print("Updated States:", states)  # ['Ekiti', 'Plateau', 'Imo', 'Borno', 'Kano']
 
 
 '''
@@ -133,7 +134,7 @@ Add Elements to a Python List
 
 states.extend(["Katsina", "Benue"])
 
-print("Extended State list:", states)
+print("Extended State list:", states) #  ['Ekiti', 'Plateau', 'Imo', 'Borno', 'Kano', 'Katsina', 'Benue']
 
 
 '''
@@ -143,11 +144,11 @@ Add Elements at the Specified Index
 # Sometimes we want to add an element but not to end. The insert() method gives us the flexibility to insert
 # an element at any index in a list
 
-# To add Delta between Ekiti and Plateau
+# To add Delta in between Ekiti and Plateau
 
 states.insert(1, "Delta")  # 1 represents the specific index where the insertion should occur
 
-print("Updated State list after insertion:", states)
+print("Updated State list after insertion:", states)  # ['Ekiti', 'Delta', 'Plateau', 'Imo', 'Borno', 'Kano', 'Katsina', 'Benue']
 
 
 # Note: The append(), extend() and insert() methods mutate the original array
@@ -156,6 +157,22 @@ print("Updated State list after insertion:", states)
 Remove an Item From a List
 '''
 
+# pop()
+# This method can be used to remove an element from a specific index. If an argument is not
+# supplied, it behaves like the Javascript pop() method removing the element at the last index.
+# If an index argument is supplied, it removes the element at that index.
+
+colors = ['green', 'red', 'white', 'pink', 'yellow', 'purple']
+
+# No argument supplied
+print('last element removed:', colors.pop())  # purple
+print('colors list without last element:', colors)  # ['green', 'red', 'white', 'pink', 'yellow']
+
+# With index number supplied
+print('removed element at index 2:', colors.pop(2))  # white
+print('colors list without element at index 2:', colors)  # ['green', 'red', 'pink', 'yellow']
+
+
 # We can remove the specified item from a list using the remove() method.
 
 days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
@@ -163,7 +180,7 @@ days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Satur
 # remove "Tuesday" from days
 days.remove("Tuesday")
 
-print('days:', days)
+print('Modified days list:', days)  # ['Sunday', 'Monday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 
 '''
 Remove One or More Elements of a List
@@ -183,9 +200,9 @@ print('updated fruits after deleting index 1 to 3:', fruits)  # prints => ['appl
 # The del state can also be used to delete the entire list
 del fruits
 
-print(fruits)  # This will now throw a "NameError: name 'fruits' is not defined" indicating the fruits list is gone
+#print(fruits)  #This code, if uncommented, will now throw a "NameError: name 'fruits' is not defined" error indicating the fruits list is gone
 
-
+# Note: pop(), remove(), del() are all destructive methods. That means they modify the original list.
 
 
 
