@@ -7,4 +7,7 @@ Table of Contents
   * [String](https://github.com/papa28x4/fta-python/blob/main/lessons/string.py)
     * [String Formatting](https://github.com/papa28x4/fta-python/blob/main/lessons/string-formatting.py)
     * [common_string_methods](https://github.com/papa28x4/fta-python/blob/main/lessons/common_string_methods.py)
+  * [Lists](https://github.com/papa28x4/fta-python/blob/main/lessons/string.py](https://github.com/papa28x4/fta-python/blob/main/lessons/lists.py)
+  
+      
   
