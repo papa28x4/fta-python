@@ -130,12 +130,12 @@ print("empty dict => ", bool({}))  # Falsy
 
 list_example = ["BMW", "Benz", "Volvo", "Toyota", "Audi"]
 
+print(list_example, 'is of type', type(list_example))  # prints => <class 'list'>
+
 # Because they are ordered, they can be accessed with the index number starting from zero
 print('first item in list_example', list_example[0])
 print('second item in list_example', list_example[1])
 print('third item in list_example', list_example[2])
-
-print(sentence, 'is of type', type(sentence))  # prints => <class 'str'>
 
 
 # We delve deeper into lists in a future lesson
@@ -151,6 +151,17 @@ tuple1 = ()
 
 # A tuple with content
 tuple2 = ("hello", "world")
+
+print(tuple2, 'is of type', type(tuple2))  # prints => <class 'tuple'>
+
+# A tuple with one element
+# To create a tuple with one item, you must include a comma after the item, otherwise Python will see it as a string
+
+data1 = ("home alone",)
+data2 = ("home alone")
+print("data1 is of type:", type(data1))  # <class 'tuple'>
+print("data2 is of type:", type(data2))  # <class 'str'>
+
 
 # Let's see an example of the immutability of tuples
 my_list = ["One", "Three", "Five", "Seven"]
@@ -170,3 +181,43 @@ print('To get the last item or the first from the right to left:', my_tuple[-1])
 ##################################### Set ################################################################
 
 # A set holds a collection of unique items. Duplicates are not allowed.
+# Unlike tuples and lists, sets are unordered. This means you can't use index numbers because the order is not
+# guaranteed i.e. random order
+# A set is enclosed in curly brackets
+
+my_set = {"Lagos", "Kano", "Enugu"}
+
+# The set() function creates a set object
+new_set = set()
+print(new_set)  # set()
+
+scores = [65, 56, 54, 65, 70, 45, 70, 90]
+# pass the scores list to the set function to convert it to set
+unique_scores = set(scores)
+print('unique scores =>', unique_scores)  # {65, 70, 45, 54, 56, 90} #it dropped duplicates
+
+##################################### Dictionary ################################################################
+# Just like your normal english dictionary has a words and meanings, python dictionary in similar fashion has keys
+# and values {key:value}. It's similar to object data type in Javascript.
+
+# In Python 3.6 and earlier, dictionaries were unordered but from Python version 3.7, dictionaries are ordered.
+# When we say that dictionaries are ordered, it means that the items have a defined order, and that order will
+# not change.
+
+# To create an empty dictionary
+new_dict = {}
+new_dict2 = dict()
+
+# The dictionary can contain values of any data type:
+my_dict = {
+  "customer": "Shola",
+  "years": 2,
+  "paid": True,
+  "package": ["diamond", "gold", "silver"]
+}
+
+####### Accessing a dictionary ###########
+# We use the key to access a dictionary
+print("customer name:", my_dict["customer"])
+
+# Dictionaries are very important data type. We talk about dictionaries in greater detail in a future lesson

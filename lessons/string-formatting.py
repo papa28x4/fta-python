@@ -39,9 +39,11 @@ print("Naija fact:", fact)  # Nigeria has 36 states
 full_greeting = "Hello, %s %s!" % (first_name, last_name)
 print('full greeting from % operator:', full_greeting)  # Hello, Jamie Foxx!
 
-
-# name='TutorialsPoint'
-# print ('Welcome To %.5s The largest Tutorials Library' % (name, ))
+# Truncating Long String Using % Operator
+school = 'Friendly Tech Academy'
+# Say we want to show just "Friendly Tech" and leave out "Academy", we add a dot and a number signifying the
+# length of the characters we want to display
+print('Welcome To %.13s. We make tech easy.' % school)  # Welcome To Friendly Tech. We make tech easy
 
 
 ''' Method 3'''
@@ -78,13 +80,13 @@ bio = f"I am {name}, {sex}, {age} years old."
 
 print(bio)  # prints => I am John Doe, male, 46 years old.
 
-price = 865
+price = 930
 
 market_report = f"Fuel price is now N{price}"
 
-print(market_report)  # prints => Fuel price is now N865
+print(market_report)  # prints => Fuel price is now N930
 
-################ Using Modifiers ##################################
+################ Using Modifiers ############################
 # A modifier is included by adding a colon : followed by a legal formatting type, like .2f
 # which means fixed point number with 2 decimals:
 
