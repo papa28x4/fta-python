@@ -33,9 +33,9 @@ sex = 'male'
 
 name, age, sex = 'John Doe', 48, 'male'
 
-print(name)  # prints John Doe
-print(age)   # 48
-print(sex)   # male
+print(name)  # prints => John Doe
+print(age)   # prints => 48
+print(sex)   # prints => male
 
 '''To assign the same value to multiple variables'''
 
@@ -68,7 +68,6 @@ print('pos_two after swap:', pos_two)  # prints 1
 
 # Numeric data type is used to hold numeric values
 # Integers, floating-point numbers and complex numbers are classified under the number data type
-
 
 number1 = 40
 print(number1, 'is of type', type(number1))  # prints <class 'int'>
