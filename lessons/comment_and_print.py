@@ -9,7 +9,7 @@ Comments
 # make certain parts of our code inactive. This is useful when debugging as it can help us
 # narrow down where the bug is originating from.
 
-# To comment a line of code in python, we use the hash symbol (#)
+# To comment a line of code in python, we use the hash symbol #
 # In Javascript, it is double forward slashes //
 
 # To print out to the terminal, we use the print function
