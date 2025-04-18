@@ -51,7 +51,6 @@ print('5 minus 4 =', a-b)
 print('5 divided 4 =', a/b)
 
 
-
 ''' Print sep parameter '''
 
 # sep is short for separator. By default, sep is set to a single space (sep=" "), so when you print the line below
@@ -94,18 +93,14 @@ print("Oyo")
 
 # OUTPUT => Lagos; Ondo; Ogun; Oyo
 
-
 # Note: sep defines the behaviour of one print statement; end defines the behaviour when using multiple print statements
-
-
-
 
 
 ''' 
 help command
 '''
 
-# Help like its name implies is there to assist you. You just pass in a valid Python function to the help command, and
-# it would show what that function is used for and the options (arguments) that available to you.
+# Help like its name implies is there to assist you. You just pass in the name of a valid Python function to the help command, 
+# and it would show what that function is used for and the options (or arguments) that available to you e.g.
 
 help(print)
