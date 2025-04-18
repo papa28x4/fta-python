@@ -15,7 +15,6 @@ Comments
 # To print out to the terminal, we use the print function
 print('Hello World')
 
-
 # To comment out multiple lines we use either triple single quotes or triple double quotes
 '''
 print('a')
@@ -32,13 +31,11 @@ print('c')
 # To do same in Javascript => /*  multilines */
 
 
-
-
 '''
 Print Function
 '''
 
-# Print is to Python what console.log is to Javascript
+# Print() is to Python what console.log() is to Javascript
 # With the Print function, you can output the result of variables, functions, classes etc
 
 # When you have multiple print statements, it's a good idea to label them, so
