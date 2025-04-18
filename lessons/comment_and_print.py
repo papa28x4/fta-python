@@ -95,7 +95,7 @@ print("Oyo")
 # OUTPUT => Lagos; Ondo; Ogun; Oyo
 
 
-# Note: sep defines the behaviour of one print statement; end defines the behaviour of multiple print statements
+# Note: sep defines the behaviour of one print statement; end defines the behaviour when using multiple print statements
 
 
 
