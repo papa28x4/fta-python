@@ -69,6 +69,7 @@ print('biodata3:', biodata)  # prints => My name is John, I'm 36
 
 
 ''' Method 4'''
+# Using f-string
 # This is the preferred way to format a string. This feature is available in python 3.6 and above
 # To use f-string, put an f in front of the string like this:
 
