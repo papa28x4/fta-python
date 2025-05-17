@@ -8,6 +8,9 @@ Table of Contents
     * [String Formatting](https://github.com/papa28x4/fta-python/blob/main/lessons/string-formatting.py)
     * [common_string_methods](https://github.com/papa28x4/fta-python/blob/main/lessons/common_string_methods.py)
   * [List](https://github.com/papa28x4/fta-python/blob/main/lessons/lists.py)
+  * [range](https://github.com/papa28x4/fta-python/blob/main/lessons/range.py)
+  * [dictionary](https://github.com/papa28x4/fta-python/blob/main/lessons/dictionary.py)
+    
   
       
   
