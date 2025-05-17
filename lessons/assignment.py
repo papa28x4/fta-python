@@ -1,13 +1,3 @@
-'''(1)'''
-# Given the below url, use the strip method to get example
-# input => 'www.example.com'.strip('cmow.')
-# expected Result => 'example'
-
-# print(url)
-
-# input => "Aunty Aunika is the Author"
-# output => "Aunika is the Author"
-
 ''' (1) '''
 # Given the below url, use the strip method to get "example"
 url = 'www.example.com'
